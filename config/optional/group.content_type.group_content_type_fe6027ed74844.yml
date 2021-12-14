@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.role_based_collection
+    - media.type.fits_technical_metadata
+  module:
+    - groupmedia
+    - media
+id: group_content_type_fe6027ed74844
+label: 'Role Based Collection: Group media (FITS Technical metadata)'
+description: 'Adds <em class="placeholder">FITS Technical metadata</em> content to groups both publicly and privately.'
+group_type: role_based_collection
+content_plugin: 'group_media:fits_technical_metadata'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

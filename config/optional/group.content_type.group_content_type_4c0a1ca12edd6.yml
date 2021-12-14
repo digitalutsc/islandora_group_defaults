@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.role_based_collection
+    - media.type.private_file
+  module:
+    - groupmedia
+    - media
+id: group_content_type_4c0a1ca12edd6
+label: 'Role Based Collection: Group media (Private File)'
+description: 'Adds <em class="placeholder">Private File</em> content to groups both publicly and privately.'
+group_type: role_based_collection
+content_plugin: 'group_media:private_file'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

@@ -1,0 +1,13 @@
+{
+    "name": "islandora_group_defaults",
+    "type": "drupal-module",
+    "description": "Default config for Access controle with Group, Group Media",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/islandora_group_defaults",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/islandora_group_defaults",
+        "source": "http://cgit.drupalcode.org/islandora_group_defaults",
+    },
+}

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.role_based_collection
+    - media.type.image
+  module:
+    - groupmedia
+    - media
+id: group_content_type_36e6dd11a9ea7
+label: 'Role Based Collection: Group media (Image)'
+description: 'Adds <em class="placeholder">Image</em> content to groups both publicly and privately.'
+group_type: role_based_collection
+content_plugin: 'group_media:image'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: true

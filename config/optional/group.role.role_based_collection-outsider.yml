@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.role_based_collection
+id: role_based_collection-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: role_based_collection
+permissions_ui: true
+permissions: {  }
