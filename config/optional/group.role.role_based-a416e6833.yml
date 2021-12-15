@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - group.type.role_based_collection
+    - group.type.role_based
   enforced:
     config:
-      - user.role.fedoraadmin
-id: role_based_collection-58e20e9c6
-label: fedoraAdmin
+      - user.role.administrator
+id: role_based-a416e6833
+label: Administrator
 weight: 3
 internal: true
 audience: outsider
-group_type: role_based_collection
+group_type: role_based
 permissions_ui: false
 permissions: {  }

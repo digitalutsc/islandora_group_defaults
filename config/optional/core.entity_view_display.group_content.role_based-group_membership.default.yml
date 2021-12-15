@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.group_content.group_content_type_2bb7894071a3f.group_roles
-    - group.content_type.group_content_type_2bb7894071a3f
-id: group_content.group_content_type_2bb7894071a3f.default
+    - field.field.group_content.role_based-group_membership.group_roles
+    - group.content_type.role_based-group_membership
+id: group_content.role_based-group_membership.default
 targetEntityType: group_content
-bundle: group_content_type_2bb7894071a3f
+bundle: role_based-group_membership
 mode: default
 content:
   group_roles:

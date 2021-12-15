@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - group.type.role_based_collection
+    - group.type.role_based
     - media.type.extracted_text
   module:
     - groupmedia
     - media
-id: group_content_type_e9ec703e7660d
-label: 'Role Based Collection: Group media (Extracted Text)'
+id: group_content_type_8e2e124956dc5
+label: 'Role Based: Group media (Extracted Text)'
 description: 'Adds <em class="placeholder">Extracted Text</em> content to groups both publicly and privately.'
-group_type: role_based_collection
+group_type: role_based
 content_plugin: 'group_media:extracted_text'
 plugin_config:
   group_cardinality: 0

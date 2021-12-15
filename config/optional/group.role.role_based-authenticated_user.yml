@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - group.type.role_based_collection
-id: role_based_collection-general_us
-label: 'General User'
-weight: 104
+    - group.type.role_based
+id: role_based-authenticated_user
+label: 'Authenticated User'
+weight: 105
 internal: false
 audience: member
-group_type: role_based_collection
+group_type: role_based
 permissions_ui: true
 permissions:
   - 'view group_media:audio entity'

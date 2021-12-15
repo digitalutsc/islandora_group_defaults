@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - group.type.role_based_collection
-id: role_based_collection-member
+    - group.type.role_based
+id: role_based-member
 label: Member
 weight: -100
 internal: true
 audience: member
-group_type: role_based_collection
+group_type: role_based
 permissions_ui: true
 permissions: {  }

@@ -1,7 +1,7 @@
 name: islandora_group_defaults
 type: module
 description: 'Default config for Access controle with Group, Group Media'
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: Custom
 dependencies:
   - gnode
