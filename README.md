@@ -4,7 +4,7 @@ This module contain default configuration for [Islandora Group module](https://g
 
 ## How to setup 
 
-Follow this document https://docs.google.com/document/d/1fy2KyjlURBpseLbwqspD3Yv5iFPpv1HQF_qKClV7zso/edit?usp=sharing for setting up testing evironment for the access control:
+Follow [this document](https://docs.google.com/document/d/1fy2KyjlURBpseLbwqspD3Yv5iFPpv1HQF_qKClV7zso/edit?usp=sharing) (**starting from step 5** because this module already takes care of step 1-4) for setting up testing evironment for the access control:
 
 ### Collection Based Access Control Setup
   - **Restricted Collection 1** with the following group roles:
