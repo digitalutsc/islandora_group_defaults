@@ -1,0 +1,8 @@
+name: Set Default Value for field_access_terms
+type: module
+description: 'Default config for Access controle with Group, Group Media'
+core_version_requirement: ^8 || ^9
+package: Custom
+dependencies:
+  - islandora_group_defaults
+  - islandora_group
