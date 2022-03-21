@@ -58,7 +58,14 @@ function islandora_group_defaults_modules_installed($modules) {
         $group_to_create->set('label', 'Public');
         $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
         $group_to_create->save();
+    }
+}
 
+/**
+ * Implements hook_entity_insert
+ */
+function islandora_group_defaults_entity_insert(\Drupal\Core\Entity\EntityInterface $entity){
+    if ($entity->getEntityTypeId() === "taxonomy_term") {
         //  Assign private as default for field_access_term
         $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')
             ->loadByProperties(['name' => "Private", 'vid' => 'islandora_access']);
@@ -77,6 +84,5 @@ function islandora_group_defaults_modules_installed($modules) {
                 $field_config->save();
             }
         }
-
     }
 }
