@@ -1,36 +1,13 @@
 <?php
 
-/**
- * Implements hook_modules_installed
- */
-function field_access_terms_defaultvalue_modules_installed($modules) {
-    if (in_array('islandora_group_defaults', $modules)) {
-        $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
-        $group_to_create->set('label', 'Public Collection');
-        $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
-        $group_to_create->save();
 
-        $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
-        $group_to_create->set('label', 'Private Collection');
-        $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
-        $group_to_create->save();
-
-        $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'role_based']);
-        $group_to_create->set('label', 'Private');
-        $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
-        $group_to_create->save();
-
-        $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
-        $group_to_create->set('label', 'Public');
-        $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
-        $group_to_create->save();
-    }
-}
 
 /**
  * Implements hook_entity_insert
  */
 function field_access_terms_defaultvalue_entity_insert(\Drupal\Core\Entity\EntityInterface $entity){
+    
+    \Drupal::logger(basename(__FILE__, '.module'))->error("field_access_terms_defaultvalue_entity_insert");
     if ($entity->getEntityTypeId() === "taxonomy_term") {
         //  Assign private as default for field_access_term
         $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')
