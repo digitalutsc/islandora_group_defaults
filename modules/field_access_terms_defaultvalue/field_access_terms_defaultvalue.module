@@ -5,7 +5,7 @@
  */
 function field_access_terms_defaultvalue_modules_installed($modules) {
     if (in_array('field_access_terms_defaultvalue', $modules)) {
-        $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
+        /*$group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
         $group_to_create->set('label', 'Public Collection');
         $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
         $group_to_create->save();
@@ -13,17 +13,17 @@ function field_access_terms_defaultvalue_modules_installed($modules) {
         $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
         $group_to_create->set('label', 'Private Collection');
         $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
-        $group_to_create->save();
+        $group_to_create->save();*/
 
         $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'role_based']);
         $group_to_create->set('label', 'Private');
         $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
         $group_to_create->save();
 
-        $group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
+        /*$group_to_create= \Drupal::entityTypeManager()->getStorage('group')->create(['type' => 'collection_based']);
         $group_to_create->set('label', 'Public');
         $group_to_create->setOwner(\Drupal\user\Entity\User::load(1));
-        $group_to_create->save();
+        $group_to_create->save();*/
     }
 }
 
