@@ -1,7 +1,7 @@
-name: Default configuration for Access Control with Group and Group Media
+name: 'Default configuration for Access Control with Group and Group Media'
 type: module
 description: 'Default config for Access controle with Group, Group Media'
-core_version_requirement: ^8 || ^9
+core_version_requirement: '^8 || ^9'
 package: Custom
 dependencies:
   - gnode

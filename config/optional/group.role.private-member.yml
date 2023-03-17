@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.private
+    - user.role.authenticated
+id: private-member
+label: Member
+weight: -100
+admin: false
+scope: insider
+global_role: authenticated
+group_type: private
+permissions:
+  - 'update any group_node:islandora_object entity'
+  - 'update own group_node:islandora_object entity'
+  - 'view group_node:islandora_object entity'
+  - 'view unpublished group_node:islandora_object entity'
